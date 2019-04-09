@@ -13,13 +13,52 @@
   gtag('config', 'UA-137572269-1');
 </script>
 
+<style>
+body{
+  margin:0;
+}
+a {
+  color:black;
+  text-decoration: none;
+  }
+
+
+
+
+  h1 {
+   font-size:45px;
+   text-align: center;
+   border-bottom:1px solid gray;
+   margin:0;
+   padding:20px;
+  }
+
+  ol{
+    border-right:1px solid gray;
+    width:150px;
+    margin:0;
+    padding:20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left:33px;
+  }
+  #grid #article{
+    padding-left:25px;
+  }
+</style>
 </head>
 <body>
 <h1><a href="index.html">최창균<a/></h1>
+  <div id="grid">
 <ol>
-  <li><a href="1.html">디지털미디어콘텐츠<a/></li>
+  <li><a href="1.html" id="active">디지털미디어콘텐츠<a/></li>
   <li><a href="2.html">디지털인문예술<a/></li>
 </ol>
+<div id="article">
 <h2>디지털미디어콘텐츠</h2>
 <img src="aoding.PNG" width="80%">
 <p><a href="https://www.hallym.ac.kr/hallym_univ/sub01/cP11/sCP12.html" target="_blank" title="html5 spcification">한림대학교 디지털미디어콘텐츠</a> 는 <strong>디자인, <u>스토리텔링,</u> 이용자와의 인터액션</strong>에 관련된 지식과 실무능력을 배양함으로써 디지털 미디어 콘텐츠 산업 분야에 다양하게 진출할 인재를 양성합니다.
@@ -61,6 +100,8 @@
 <p>디지털 북 기획 개발</p>
 <p>포털 등 웹 콘텐츠 기획, 제작</p>
 <p>기획, 홍보, 제작 관련 다양한 직장과 직종</p>
+</div>
+</div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mYXzBoDVXwc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>
   <div id="disqus_thread"></div>
