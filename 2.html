@@ -20,9 +20,6 @@ body{
    color:black;
    text-decoration: none;
 }
-
-
-
    h1 {
     font-size:45px;
     text-align: center;
@@ -39,13 +36,25 @@ ol{
 }
 #grid{
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: auto;
 }
 #grid ol{
   padding-left:33px;
 }
 #grid #article{
-  padding-left:300px;
+  padding-left:250px;
+}
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  ol{
+    border-right:none;
+  }
+  h1 {
+   border-bottom:none;
+ }
+
 }
 </style>
 </head>
@@ -53,10 +62,10 @@ ol{
   <h1><a href="index.html">최창균<a/></h1>
     <div id="grid">
   <ol>
-    <li><a href="1.html">디지털미디어콘텐츠<a/></li>
+    <li><a href="1.html">디지털미디어콘텐츠<a/>
+    </li>
     <li><a href="2.html" id="active">디지털인문예술<a/></li>
   </ol>
-
 <div id="article">
 <h2>디지털인문예술</h2>
 <img src="doding.PNG" width="80%">
